@@ -1,0 +1,8 @@
+<h1>Welcome to the Session Example App!</h1>
+
+<% if session[:username] %>
+  <p>Logged in as <%= session[:username] %></p>
+  <%= link_to 'Logout', logout_path, method: :delete %>
+<% else %>
+  <%= link_to 'Login', login_path %>
+<% end %>

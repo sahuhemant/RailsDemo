@@ -1,0 +1,14 @@
+<h1>New Example</h1>
+
+<%= form_with(model: @example, url: examples_path) do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :email %>
+  <%= form.text_field :email %>
+
+  <%= form.label :status %>
+  <%= form.text_field :status %>
+
+  <%= form.submit %>
+<% end %>

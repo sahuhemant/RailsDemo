@@ -1,0 +1,10 @@
+<--clients.html.erb (view file) -->
+<form action="/clients" method="get">
+  <label for="status">Status:</label>
+  <input type="text" name="status" id="status">
+  <input type="submit" value="Submit">
+</form>
+
+ <% @clients.each do |i| %>
+ <%=i.name%>
+ <%end%> 
